@@ -15,7 +15,8 @@ import {CoreModule} from './@core/core.module';
     imports: [
         IonicModule.forRoot(),
         CoreModule,
-        AppRoutingModule],
+        AppRoutingModule
+    ],
     providers: [
         StatusBar,
         SplashScreen,
