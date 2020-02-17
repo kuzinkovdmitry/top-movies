@@ -14,5 +14,6 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
     this.homeService.getMovies().subscribe(data => console.log(data));
+    this.homeService.getTrailer().subscribe(data => console.log(data));
   }
 }
