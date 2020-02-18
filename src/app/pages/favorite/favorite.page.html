@@ -8,5 +8,9 @@
 </ion-header>
 
 <ion-content>
-
+  <app-movie *ngFor="let movie of favoriteMovies"
+             [movie]="movie"
+             [key]="'favorite'"
+             (movieChanges)="removeFavoriteMovie($event)">
+  </app-movie>
 </ion-content>

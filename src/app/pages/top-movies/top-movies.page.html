@@ -8,42 +8,9 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let movie of moviesList">
-    <div class="top-movies__movie-wrapper">
-      <img [src]=movie.urlPoster
-           class="top-movies__poster"
-           alt="poster">
-      <div class="top-movies__info">
-        <ion-icon [name]="movie.selected ? 'star' : 'star-outline'"
-                  (click)="toggleFavoriteState(movie)"
-                  class="top-movies__favorite-icon">
-        </ion-icon>
-        <p class="top-movies__title">{{movie.title}} <span>({{movie.year}})</span></p>
-        <div class="top-movies__info-item">
-          <p class="top-movies__item-label">Rating:</p>
-          <p class="top-movies__item-value">{{movie.rating}}</p>
-        </div>
-        <div class="top-movies__info-item __genre">
-          <p class="top-movies__item-label">Movie Genres</p>
-          <p class="top-movies__item-value"
-             *ngFor="let genre of movie.genres">
-            {{genre}}
-          </p>
-        </div>
-        <div class="top-movies__info-item">
-          <p class="top-movies__item-label">Country:</p>
-          <p class="top-movies__item-value">{{movie.countries}}</p>
-        </div>
-        <div class="top-movies__info-item __directors">
-          <p class="top-movies__item-label">Directed by</p>
-          <a class="top-movies__item-value"
-             *ngFor="let director of movie.directors"
-             href="{{'https://www.imdb.com/name/' + director.id}}"
-             target="_blank">
-            {{director.name}}
-          </a>
-        </div>
-      </div>
-    </div>
-  </ion-card>
+  <app-movie *ngFor="let movie of moviesList"
+             [key]="'top-movies'"
+             [movie]="movie"
+             (movieChanges)="toggleFavoriteState($event)">
+  </app-movie>
 </ion-content>

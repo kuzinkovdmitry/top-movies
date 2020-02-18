@@ -1,0 +1,34 @@
+<img class="movie__poster"
+     alt="poster"
+     [src]=movie.urlPoster>
+<div class="movie__info">
+    <ion-icon [name]="getIconName(movie)"
+              (click)="emitMovieAction(movie)"
+              class="movie__icon">
+    </ion-icon>
+    <p class="movie__title">{{movie.title}} <span>({{movie.year}})</span></p>
+    <div class="movie__info-item">
+        <p class="movie__item-label">Rating:</p>
+        <p class="movie__item-value">{{movie.rating}}</p>
+    </div>
+    <div class="movie__info-item __genre">
+        <p class="movie__item-label">Movie Genres</p>
+        <p class="movie__item-value"
+           *ngFor="let genre of movie.genres">
+            {{genre}}
+        </p>
+    </div>
+    <div class="movie__info-item">
+        <p class="movie__item-label">Country:</p>
+        <p class="movie__item-value">{{movie.countries}}</p>
+    </div>
+    <div class="movie__info-item __directors">
+        <p class="movie__item-label">Directed by</p>
+        <a class="movie__item-value"
+           *ngFor="let director of movie.directors"
+           href="{{'https://www.imdb.com/name/' + director.id}}"
+           target="_blank">
+            {{director.name}}
+        </a>
+    </div>
+</div>
