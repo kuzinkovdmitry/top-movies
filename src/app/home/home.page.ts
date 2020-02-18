@@ -1,5 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {HomeService} from './home.service';
+import {Observable} from 'rxjs';
+import {IMovies} from './interfaces/movies.interface';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +11,9 @@ import {HomeService} from './home.service';
 })
 export class HomePage implements OnInit {
 
-  constructor(private homeService: HomeService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.homeService.getMovies().subscribe(data => console.log(data));
-    this.homeService.getTrailer().subscribe(data => console.log(data));
   }
 }

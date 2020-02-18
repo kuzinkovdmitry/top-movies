@@ -11,8 +11,16 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'favourite',
-    loadChildren: './pages/favourite/favourite.module#FavouritePageModule'
+    path: 'favorite',
+    loadChildren: './pages/favorite/favorite.module#FavoritePageModule'
+  },
+  {
+    path: 'top-movies',
+    loadChildren: './pages/top-movies/top-movies.module#TopMoviesPageModule'
+  },
+  {
+    path: 'movies-chart',
+    loadChildren: './pages/movies-chart/movies-chart.module#MoviesChartPageModule'
   },
 ];
 

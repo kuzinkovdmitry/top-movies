@@ -7,7 +7,21 @@
 </ion-header>
 
 <ion-content>
-  <ion-button routerLink="/favourite" routerDirection="forward">
-    Favourite
-  </ion-button>
+  <div class="home__container">
+    <ion-button class="home__pages-link"
+                routerLink="/top-movies"
+                routerDirection="forward">
+      Top 20 Movies
+    </ion-button>
+    <ion-button class="home__pages-link"
+                routerLink="/movies-chart"
+                routerDirection="forward">
+      Movies Chart
+    </ion-button>
+    <ion-button class="home__pages-link"
+                routerLink="/favorite"
+                routerDirection="forward">
+      My Favorite Movies
+    </ion-button>
+  </div>
 </ion-content>

@@ -41,7 +41,8 @@
       "rated": "R",
       "votes": "2,190,885",
       "type": "Movie",
-      "ranking": 1
+      "ranking": 1,
+      "selected": false
     },
     {
       "title": "The Godfather",
@@ -86,7 +87,8 @@
       "rated": "R",
       "votes": "1,509,506",
       "type": "Movie",
-      "ranking": 2
+      "ranking": 2,
+      "selected": false
     },
     {
       "title": "The Godfather: Part II",
@@ -133,7 +135,8 @@
       "rated": "R",
       "votes": "1,057,304",
       "type": "Movie",
-      "ranking": 3
+      "ranking": 3,
+      "selected": false
     },
     {
       "title": "The Dark Knight",
@@ -180,7 +183,8 @@
       "rated": "PG-13",
       "votes": "2,173,427",
       "type": "Movie",
-      "ranking": 4
+      "ranking": 4,
+      "selected": false
     },
     {
       "title": "12 Angry Men",
@@ -222,7 +226,8 @@
       "rated": "Not Rated",
       "votes": "638,913",
       "type": "Movie",
-      "ranking": 5
+      "ranking": 5,
+      "selected": false
     },
     {
       "title": "Schindler's List",
@@ -269,7 +274,8 @@
       "rated": "R",
       "votes": "1,143,661",
       "type": "Movie",
-      "ranking": 6
+      "ranking": 6,
+      "selected": false
     },
     {
       "title": "The Lord of the Rings: The Return of the King",
@@ -317,7 +323,8 @@
       "rated": "PG-13",
       "votes": "1,558,240",
       "type": "Movie",
-      "ranking": 7
+      "ranking": 7,
+      "selected": false
     },
     {
       "title": "Pulp Fiction",
@@ -362,7 +369,8 @@
       "rated": "R",
       "votes": "1,721,512",
       "type": "Movie",
-      "ranking": 8
+      "ranking": 8,
+      "selected": false
     },
     {
       "title": "The Good, the Bad and the Ugly",
@@ -409,7 +417,8 @@
       "rated": "R",
       "votes": "649,910",
       "type": "Movie",
-      "ranking": 9
+      "ranking": 9,
+      "selected": false
     },
     {
       "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -455,7 +464,8 @@
       "rated": "PG-13",
       "votes": "1,570,053",
       "type": "Movie",
-      "ranking": 10
+      "ranking": 10,
+      "selected": false
     },
     {
       "title": "Fight Club",
@@ -498,7 +508,8 @@
       "rated": "R",
       "votes": "1,749,972",
       "type": "Movie",
-      "ranking": 11
+      "ranking": 11,
+      "selected": false
     },
     {
       "title": "Forrest Gump",
@@ -541,7 +552,8 @@
       "rated": "PG-13",
       "votes": "1,690,141",
       "type": "Movie",
-      "ranking": 12
+      "ranking": 12,
+      "selected": false
     },
     {
       "title": "Inception",
@@ -585,7 +597,8 @@
       "rated": "PG-13",
       "votes": "1,922,364",
       "type": "Movie",
-      "ranking": 13
+      "ranking": 13,
+      "selected": false
     },
     {
       "title": "Star Wars: Episode V - The Empire Strikes Back",
@@ -630,7 +643,8 @@
       "rated": "PG",
       "votes": "1,100,227",
       "type": "Movie",
-      "ranking": 14
+      "ranking": 14,
+      "selected": false
     },
     {
       "title": "The Lord of the Rings: The Two Towers",
@@ -677,7 +691,8 @@
       "rated": "PG-13",
       "votes": "1,406,653",
       "type": "Movie",
-      "ranking": 15
+      "ranking": 15,
+      "selected": false
     },
     {
       "title": "The Matrix",
@@ -724,7 +739,8 @@
       "rated": "R",
       "votes": "1,577,550",
       "type": "Movie",
-      "ranking": 16
+      "ranking": 16,
+      "selected": false
     },
     {
       "title": "Goodfellas",
@@ -769,7 +785,8 @@
       "rated": "R",
       "votes": "952,986",
       "type": "Movie",
-      "ranking": 17
+      "ranking": 17,
+      "selected": false
     },
     {
       "title": "One Flew Over the Cuckoo's Nest",
@@ -811,7 +828,8 @@
       "rated": "R",
       "votes": "864,026",
       "type": "Movie",
-      "ranking": 18
+      "ranking": 18,
+      "selected": false
     },
     {
       "title": "Seven Samurai",
@@ -856,7 +874,8 @@
       "rated": "Not Rated",
       "votes": "296,658",
       "type": "Movie",
-      "ranking": 19
+      "ranking": 19,
+      "selected": false
     },
     {
       "title": "Se7en",
@@ -897,7 +916,8 @@
       "rated": "R",
       "votes": "1,349,339",
       "type": "Movie",
-      "ranking": 20
+      "ranking": 20,
+      "selected": false
     }
   ],
   "jsonrpc": "2.0"

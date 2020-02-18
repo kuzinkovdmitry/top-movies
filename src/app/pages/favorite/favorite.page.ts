@@ -1,12 +1,12 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-favourite',
-  templateUrl: './favourite.page.html',
-  styleUrls: ['./favourite.page.scss'],
+  selector: 'app-favorite',
+  templateUrl: './favorite.page.html',
+  styleUrls: ['./favorite.page.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class FavouritePage implements OnInit {
+export class FavoritePage implements OnInit {
 
   constructor() { }
 
