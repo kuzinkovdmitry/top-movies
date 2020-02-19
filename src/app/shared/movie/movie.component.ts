@@ -23,5 +23,4 @@ export class MovieComponent {
       return 'close-outline';
     }
   }
-
 }

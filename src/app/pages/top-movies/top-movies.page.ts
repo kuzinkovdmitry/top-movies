@@ -1,21 +1,18 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, Self} from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {HomeService} from '../../home/home.service';
 import {IMovies} from '../../home/interfaces/movies.interface';
-import {NgOnDestroy} from '../../@core/services/destroy.service';
 
 @Component({
     selector: 'app-top-movies',
     templateUrl: './top-movies.page.html',
     styleUrls: ['./top-movies.page.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    providers: [NgOnDestroy]
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TopMoviesPage implements OnInit {
     moviesList: IMovies[];
 
     constructor(private homeService: HomeService,
-                private cdRef: ChangeDetectorRef,
-                @Self() private onDestroy$: NgOnDestroy) {
+                private cdRef: ChangeDetectorRef) {
     }
 
     ngOnInit() {

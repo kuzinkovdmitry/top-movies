@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {BaseApiService} from '../@core/api/shared/base-api.service';
-import {HttpClient} from '@angular/common/http';
-import {BehaviorSubject, Observable, Subject} from 'rxjs';
+import {Observable} from 'rxjs';
 import {IMovies} from './interfaces/movies.interface';
 
 @Injectable({
@@ -9,8 +8,7 @@ import {IMovies} from './interfaces/movies.interface';
 })
 export class HomeService {
 
-    constructor(private baseApiService: BaseApiService,
-                private http: HttpClient) {
+    constructor(private baseApiService: BaseApiService) {
     }
 
     getMovies(): Observable<IMovies[]> {

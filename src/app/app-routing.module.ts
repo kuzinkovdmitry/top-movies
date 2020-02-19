@@ -8,19 +8,19 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'favorite',
-    loadChildren: './pages/favorite/favorite.module#FavoritePageModule'
+    loadChildren: () => import('./pages/favorite/favorite.module').then( m => m.FavoritePageModule)
   },
   {
     path: 'top-movies',
-    loadChildren: './pages/top-movies/top-movies.module#TopMoviesPageModule'
+    loadChildren: () => import('./pages/top-movies/top-movies.module').then( m => m.TopMoviesPageModule)
   },
   {
     path: 'movies-chart',
-    loadChildren: './pages/movies-chart/movies-chart.module#MoviesChartPageModule'
+    loadChildren: () => import('./pages/movies-chart/movies-chart.module').then( m => m.MoviesChartPageModule)
   },
 ];
 
