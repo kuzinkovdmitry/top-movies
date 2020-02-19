@@ -27,5 +27,6 @@ export class FavoritePage implements OnInit {
 
     getFavoriteMovies() {
         this.favoriteMovies = JSON.parse(localStorage.getItem('movies'));
+        this.cdRef.detectChanges();
     }
 }
